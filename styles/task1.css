@@ -1,0 +1,65 @@
+﻿@font-face {
+   font-family: 'Caviar Dreams';
+   src: url('../fonts/caviardreams.ttf');}
+@font-face {
+   font-family: 'Azoft Sans';
+   src: url('../fonts/azoft-sans.ttf');}
+   
+body { font-family: 'Caviar Dreams'}
+h1   {font-family: 'Azoft Sans';   
+	   text-align: center;
+	   text: white;}
+h3 { text-align: center}
+
+.div_up_hidden
+{     
+    background-color: rgba(250, 250, 250, 0.7);
+  border-bottom-right-radius: 70px 40px;
+  border-top-left-radius: 40px 70px;
+    width: 754px;
+    
+    top:160px;
+	left:100px;
+    position: absolute;
+   display:none;
+   
+   
+   
+}	
+.div_up_visible
+{   
+    background-color: rgba(250, 250, 250, 0.7);
+  border-bottom-right-radius: 70px 40px;
+  border-top-left-radius: 40px 70px;
+    width: 754px;    
+    top:160px;
+	left:100px;
+    position: absolute;
+   visibility:visible;
+   
+   
+}
+
+	
+ input, select 
+		{margin-left: 40px;		
+		color: #888;
+        border: 1px solid #ccc;        
+        font-size: 15px;
+		text-align:center;
+        width: 150px;
+        float: left;
+        border-radius: 7px;       
+    }
+ label{ margin-left: 15px;}	
+ input.submit {
+            margin-bottom: 20px;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+            height: 38px;
+            position:relative;			
+            margin-left: 250px;		
+			font-size: 20px;
+			text-align:center;
+			border-radius: 7px;}

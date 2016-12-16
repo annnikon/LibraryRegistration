@@ -1,0 +1,285 @@
+﻿<html>
+<head><title>NureLibrary - реєстрація</title>
+<link rel="stylesheet" type="text/css" href="styles/task1.css">
+<script type="text/javascript">
+function MakeHidden()
+{
+document.getElementById('second_step').className="div_up_visible";
+document.getElementById('first_step').className="div_up_hidden";
+}
+
+</script>
+<style>
+img.ok, img.wrong{width:20px; }
+img.ok{display: inline;
+content: url('ok.png');}
+img.wrong{display: inline;
+content: url('wrong.png');}	
+	
+</style>
+</head>
+<body background="2.jpg" >
+<center><h1> NureLibrary - бібліотека майбутнього</h1></center>
+<h3>Приєднуйся вже зараз і відчуй переваги!</h3>    
+        <form>
+		<div id="first_step" class="div_up_visible">
+		
+		<h1>Перший крок до NureLibrary</h1>
+		        <input type="text"  name="firstname" id="firstname" value="Ваше ім'я" onfocus="this.value=''" />
+                <label for="username"><img id="imgfirstname"/> Введіть своє ім'я</label>
+				<p/>
+				<input type="text" name="lastname" id="lastname" value="Прізвище" onfocus="this.value=''"/>
+				<label for="username"><img id="imglastname"/> Ваше прізвище </label>
+				<p/>
+				
+				<input type="text" name="username" id="username" value="Логiн" onfocus="this.value=''" />
+                <label for="username"><img id="imgusername"/> Придумайте ім'я користувача.Не меншее 6 символів.</label>
+				<p/>
+                
+                <input type="password" name="password" id="password" value="Пароль" onfocus="this.value=''" />
+                <label for="password"><img id="imgpassword"/> Пароль. Не менше 8 символiв. </label>
+                <p/>
+                <input type="password" name="cpassword" id="cpassword" value="Пароль" onfocus="this.value=''"/>
+			
+                <label for="cpassword"> <img id="imgcpassword"/> Повторіть пароль. </label>
+				<p/>
+				<input type="checkbox" name="agree" class="agree" id="agree" />
+				<label for="agree"><img id="imgagree"/>Погоджуюсь з <i>правилами</i> бібліотеки</label>
+				<p/>
+             
+				<center><input type="button" class="submit" name="submit_first" id="submit_first" value="Зареєструватися" /></center>
+
+        </div>
+		
+		
+        <div id="second_step" class="div_up_hidden">
+		
+		<h1>Розкажіть трохи про себе</span></h1>
+			<input type="text" name="email" id="email"  value="Email" onfocus="this.value=''" /> <label for="email"><img id="imgemail"/>Ваш email</label> 
+			<p/>
+			<select id="day" name="day">
+                    <option> 1</option> <option>2</option> <option>3</option>
+                    <option>4</option> <option>5</option> <option>6</option>
+					<option>7</option><option>8</option><option>9</option>
+					<option>10</option> <option>11</option> <option>12</option>  <option>13</option> 
+					<option>14</option> <option>15</option> <option>16</option>
+					<option>17</option><option>18</option><option>19</option>
+					<option>20</option> <option>21</option> <option>22</option>  <option>23</option> 
+					<option>24</option> <option>25</option> <option>26</option>
+					<option>27</option><option>28</option><option>29</option> <option>30</option> <option>31</option>
+			</select>
+			<select id="month" name="month">
+                    <option> січень</option> <option>лютий</option> <option>березень</option>
+                    <option>квітень</option> <option>травень</option> <option>червень</option>
+					<option>липень</option><option>серпень</option><option>вересень</option>
+					<option>жовтень</option> <option>листопад</option> <option>грудень</option>
+			</select>
+			<input type="text" length="4" name="age" id="age" value="Рік" onfocus="this.value=''" />
+                <label for="age"> <img id="imgage"/>День народження </label> 
+				<p/>
+                <select id="gender" name="gender">
+                    <option>Чоловік</option>
+                    <option>Жінка</option>
+                </select>
+				<label for="gender">Стать</label> 
+				<p/>
+				<select id="age" name="age">
+                    <option> Школяр </option>
+                    <option> Студент</option>
+                    <option>Аспірант</option>
+                    <option>Викладач</option>
+					<option>Винахідник</option>
+					<option>Супер-працівник</option>
+					<option>Інше</option>
+                </select>
+                <label for="age">Хто ви? </label> 
+                <p/>
+                <select id="country" name="country">
+                    <option>Харків</option>
+                    <option>Київ</option>
+                    <option>Львів</option>
+                    <option>Одеса</option>
+                    <option>Інше місто</option>
+                </select>
+                <label for="country">Звідки ви? </label> 
+				<center> <h3>Література якої тематики Вас цікавить найбільше?</h3></center>
+				<input type="checkbox" name="t1" id="t1" /> Java / .NET програмування 
+				<p/>
+				<input type="checkbox" name="t2" id="t2" />Розробка для Android, iOS 		<p/>
+				<input type="checkbox" name="t3" id="t3" /> Веб-дизайн HTML 5 / JavaScript / CSS 3 				<p/>
+				<input type="checkbox" name="t4" id="t4" />  Adobe Photoshop / Corel Draw / 3D-моделювання				<p/>
+				<input type="checkbox" name="t5" id="t5" />  IT-новини <p/>
+				<input type="checkbox" name="t6" id="t6" />   Ігри для PC/ xBox / PlayStation				<p/>
+				<input type="checkbox" name="t7" id="t7" />  Апаратне забезпечення / радіоелектроніка 				<p/>
+				<input type="checkbox" name="t8" id="t8" /> Старпапи, бізнес-ідеї, психологія успіху				<p/>
+				<input type="checkbox" name="t9" id="t9" /> Іноземні мови 				<p/>
+				<input type="checkbox" name="t10" id="t10" />   Художня література (у нас багато цікавого!) 				<p/>
+								<br/>
+				<input type="checkbox" name="ordercard" id="ordercard" />
+                <label for="ordercard"><b>Я хочу отримати читацьку картку бібліотеки</b></label>
+				<p/>
+            <input class="submit" type="submit" name="submit_second" id="submit_second" value="Все! Готово!" />
+<p/>			
+		  
+        </div> 
+</form> 		
+        
+
+ <script type="text/javascript">
+document.getElementById('firstname').onblur = function() {
+if (document.getElementById('firstname').value == "")    {  
+     window.alert("А як же імя ?");
+	 document.getElementById('imgfirstname').className='wrong';
+    }
+else {
+document.getElementById('imgfirstname').className='ok';
+}	
+	}
+	
+
+document.getElementById('lastname').onblur = function() {
+if (document.getElementById('lastname').value == "")    {  
+     window.alert("Ви забули ввести прізвище!");
+	 document.getElementById('imglastname').className='wrong';
+    }
+else {
+document.getElementById('imglastname').className='ok';
+}	
+	}
+	
+	
+	document.getElementById('username').onblur = function() {
+if (document.getElementById('username').value == "" 
+|| document.getElementById('username').value.length<6 )    {  
+     window.alert("Введіть коректний логін!");
+	 document.getElementById('imgusername').className='wrong';
+    }
+else {
+document.getElementById('imgusername').className='ok';
+}	
+	}
+	
+document.getElementById('password').onblur = function() {
+if (document.getElementById('password').value == "" 
+|| document.getElementById('password').value.length < 8 )    {  
+     window.alert("Пароль має містити від 8 символів")
+	 document.getElementById('imgpassword').className='wrong';	 
+    }
+else {
+document.getElementById('imgpassword').className='ok';
+}	
+	}
+	
+	
+	
+document.getElementById('cpassword').onfocus = function() {
+
+	document.getElementById('cpassword').value="";
+
+}
+document.getElementById('cpassword').onblur = function() {
+if (document.getElementById('cpassword').value!=document.getElementById('password').value ||
+ document.getElementById('cpassword').value.length < 8)    {  
+     window.alert("Паролі не співпадають. Спробуйте ще раз. ");
+	 document.getElementById('imgcpassword').className='wrong';
+    }
+else  {  
+document.getElementById('imgcpassword').className='ok';
+}	
+}
+
+document.getElementById('agree').onclick=function(){
+if (document.getElementById('agree').checked="checked"){
+document.getElementById('imgagree').className='ok';	
+}
+else{
+document.getElementById('imgagree').className='wrong';	
+}
+}
+
+document.getElementById('submit_first').onclick = function(){
+if (AllOK()){
+document.getElementById('submit_first').disabled=0;
+firstname=document.getElementById('firstname').value;
+lastname=document.getElementById('lastname').value;
+username=document.getElementById('username').value;
+password=document.getElementById('password').value;
+MakeHidden();
+}
+else {
+window.alert("Не всі поля заповнені вірно.");
+}	
+}
+
+function AllOK() {
+if (document.getElementById('imgfirstname').className=='ok' 
+&& document.getElementById('imglastname').className=='ok'
+ && document.getElementById('imgusername').className=='ok' 
+ && document.getElementById('imgpassword').className=='ok' 
+ && document.getElementById('imgcpassword').className=='ok' 
+ && document.getElementById('imgagree').className=='ok'){
+ return true;
+}
+}
+
+
+document.getElementById('email').onblur = function(){
+  if (document.getElementById('email').value == "" 
+  || document.getElementById('email').value.indexOf('@', 0) == -1) {
+        alert("Це не адреса e-mail!");
+		document.getElementById('imgemail').className='wrong';		
+		}
+  else {
+  alert("OK!");
+  document.getElementById('imgemail').className='ok';
+}
+}  
+
+document.getElementById('age').onblur = function() {
+var n = parseInt(document.getElementById('age').value); 
+   if (isNaN(n)) {alert('не число');} 
+if (document.getElementById('age').value=='' 
+	|| isNaN(n)
+	|| n<1900
+	|| n>2015) {  
+     window.alert("Будь ласка, введіть правильний рік народження");
+	 document.getElementById('imgage').className='wrong';
+    }
+else  {  
+document.getElementById('imgage').className='ok';
+}	
+}
+
+document.getElementById('submit_second').onclick = function(){
+if (document.getElementById('imgemail').className=='ok'
+&&document.getElementById('imgage').className=='ok'){
+email=document.getElementById('email').value;
+Congretulate();
+}
+else {
+window.alert("Не всі поля заповнені вірно.");
+}	
+}
+
+function Congretulate()
+{
+var myWindow = window.open("", "", "width=500, height=500");
+myWindow.document.write("<html>"+"<body>"+"<h1>"+"Вітаємо з успішною реєстрацією, "+firstname+" "+lastname+"!\nДля входу на сайт використовуйте ці дані:\n Логін: "+username+"\nПароль: "+password+"\n\nE-mail: "+email +"</h1>"+"</body>"+"</html>");}
+
+
+ 
+
+	
+		
+
+
+	
+	
+	
+</script>
+  
+	
+
+
+</body>
+</html>
